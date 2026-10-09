@@ -1,0 +1,202 @@
+[
+  {
+    "xref": 81,
+    "file": "product-devices.png",
+    "width": 454,
+    "height": 454,
+    "mask": 82,
+    "pages": [
+      6
+    ]
+  },
+  {
+    "xref": 92,
+    "file": "employee-commission.jpeg",
+    "width": 1483,
+    "height": 880,
+    "mask": 0,
+    "pages": [
+      7,
+      8,
+      21,
+      22,
+      23,
+      24
+    ]
+  },
+  {
+    "xref": 93,
+    "file": "boarding.jpeg",
+    "width": 1918,
+    "height": 1080,
+    "mask": 0,
+    "pages": [
+      7
+    ]
+  },
+  {
+    "xref": 96,
+    "file": "reminders.jpeg",
+    "width": 1678,
+    "height": 883,
+    "mask": 0,
+    "pages": [
+      8
+    ]
+  },
+  {
+    "xref": 141,
+    "file": "member-points.jpeg",
+    "width": 340,
+    "height": 725,
+    "mask": 0,
+    "pages": [
+      12
+    ]
+  },
+  {
+    "xref": 159,
+    "file": "medical.jpeg",
+    "width": 2872,
+    "height": 1576,
+    "mask": 0,
+    "pages": [
+      13
+    ]
+  },
+  {
+    "xref": 202,
+    "file": "mall-home.jpeg",
+    "width": 828,
+    "height": 1792,
+    "mask": 0,
+    "pages": [
+      16
+    ]
+  },
+  {
+    "xref": 205,
+    "file": "mall-promotion.jpeg",
+    "width": 828,
+    "height": 1792,
+    "mask": 0,
+    "pages": [
+      16
+    ]
+  },
+  {
+    "xref": 206,
+    "file": "mall-products.jpeg",
+    "width": 828,
+    "height": 1792,
+    "mask": 0,
+    "pages": [
+      16
+    ]
+  },
+  {
+    "xref": 225,
+    "file": "mall-flash-sale.jpeg",
+    "width": 828,
+    "height": 315,
+    "mask": 0,
+    "pages": [
+      17
+    ]
+  },
+  {
+    "xref": 227,
+    "file": "mall-group-buy.jpeg",
+    "width": 1242,
+    "height": 462,
+    "mask": 0,
+    "pages": [
+      17
+    ]
+  },
+  {
+    "xref": 277,
+    "file": "supplier.jpeg",
+    "width": 1462,
+    "height": 792,
+    "mask": 0,
+    "pages": [
+      28
+    ]
+  },
+  {
+    "xref": 282,
+    "file": "stock-all.jpeg",
+    "width": 828,
+    "height": 1792,
+    "mask": 0,
+    "pages": [
+      29
+    ]
+  },
+  {
+    "xref": 285,
+    "file": "stock-partial.jpeg",
+    "width": 828,
+    "height": 1792,
+    "mask": 0,
+    "pages": [
+      29
+    ]
+  },
+  {
+    "xref": 304,
+    "file": "promotion-types.jpeg",
+    "width": 1177,
+    "height": 521,
+    "mask": 0,
+    "pages": [
+      32
+    ]
+  },
+  {
+    "xref": 307,
+    "file": "promotion-settings.jpeg",
+    "width": 1701,
+    "height": 936,
+    "mask": 0,
+    "pages": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ]
+  },
+  {
+    "xref": 324,
+    "file": "member-analysis.jpeg",
+    "width": 1581,
+    "height": 622,
+    "mask": 0,
+    "pages": [
+      39
+    ]
+  },
+  {
+    "xref": 22,
+    "file": "pospal-logo.png",
+    "width": 2064,
+    "height": 649,
+    "mask": 23,
+    "pages": [
+      1
+    ]
+  },
+  {
+    "xref": 9,
+    "file": "original-cover.jpeg",
+    "width": 6016,
+    "height": 4016,
+    "mask": 0,
+    "pages": [
+      1
+    ]
+  }
+]

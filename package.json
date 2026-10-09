@@ -1,0 +1,17 @@
+{
+  "name": "pospal-pet-store-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",
+    "build": "vite build --base=/pospalpet/",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort --base=/pospalpet/"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

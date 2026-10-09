@@ -1,0 +1,107 @@
+/* Keep the accepted phone and tablet layouts below this breakpoint intact. */
+@media (min-width: 1024px) {
+  .header-inner,
+  .solution-tabs > div,
+  .cover-inner,
+  .solution-main {
+    max-width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .solution-tabs > div { gap: 12px; }
+  .solution-tabs a { font-size: 14px; }
+  .cover-inner { min-height: 294px; padding-top: 42px; padding-bottom: 42px; }
+  .solution-heading { width: calc(100% - 320px); }
+  .solution-heading p { max-width: 660px; font-size: 16px; }
+  .cover-companions { right: 40px; bottom: 25px; }
+  .solution-main { padding-bottom: 40px; }
+
+  .solution-chapter-head { padding-top: 36px; gap: 16px; }
+  .solution-chapter-head h2 { font-size: 30px; }
+  .solution-chapter + .solution-chapter { padding-top: 20px; margin-top: 12px; }
+  .solution-chapter-head + .feature { padding-top: 30px; }
+  .feature { padding-top: 48px; padding-bottom: 48px; }
+  .feature:first-child { padding-top: 36px; }
+  .feature.has-media {
+    grid-template-columns: minmax(0,.95fr) minmax(0,1.05fr);
+    grid-template-rows: auto auto;
+    gap: 28px 48px;
+    align-items: start;
+  }
+  .feature > .feature-head { grid-column: 1 / -1; grid-row: 1; }
+  .feature > .feature-details { grid-column: 1; grid-row: 2; }
+  .feature > .feature-media { grid-column: 2; grid-row: 2; }
+  .feature.has-media > .feature-details,
+  .feature.has-media > .feature-media { margin-top: 0; }
+  .feature h3 { font-size: 27px; }
+  .feature-lead { max-width: 820px; padding-left: 0; font-size: 15px; margin-top: 14px; }
+  .feature-details p,
+  .detail-list { font-size: 15px; }
+  .feature-details .source-note,
+  .feature-details .supply-diagram-note { font-size: 12px; }
+  .staff-commission .detail-list li { font-size: 15px; }
+  .service-feature .feature-title { padding-right: 110px; }
+  .chapter-pet { right: 0; }
+
+  .feature > .feature-media:not(.ugopet-showcase) {
+    padding: 20px;
+    border-radius: 18px;
+    gap: 20px;
+  }
+  .feature > .feature-media.media-grid:not(.phone-media) { grid-template-columns: 1fr; }
+  .feature-media.phone-media { grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; }
+  .phone-media .shot-button img { width: auto; max-height: 480px; margin-inline: auto; }
+  .feature-media .shot:has(img[src*="product-devices"]) { width: min(100%,420px); }
+
+  .specification-feature.text-only .specification-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 28px 36px;
+    align-items: start;
+  }
+  .specification-feature.text-only .specification {
+    padding: 20px 0 0;
+    border-top: 1px solid var(--line);
+  }
+  .member-entry { grid-template-columns: 35px 140px minmax(0,1fr); }
+  .member-entry > div { max-width: 740px; }
+  .membership-options { gap: 32px; }
+  .recharge-layout { gap: 40px; }
+  .staff-map { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 40px; }
+  .supply-process { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 48px; }
+  .supply-diagram { border-radius: 18px; }
+  .marketing-pillars { gap: 36px; }
+
+  .promotions-feature .promotion-catalog { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 24px; }
+  .promotions-feature .promotion-item:nth-child(3) { padding-top: 25px; border-top: 1px dashed #dbcbb5; }
+
+  /* The five storefront designs need a full-width, unobstructed display. */
+  #online-mall > .feature-details { grid-column: 1 / -1; }
+  #online-mall .specification-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px 48px; }
+  #online-mall .specification { padding: 20px 0 0; border-top: 1px solid var(--line); }
+  #online-mall > .ugopet-showcase {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    gap: 20px;
+    align-items: start;
+    height: auto;
+    padding: 24px;
+    border-radius: 18px;
+  }
+  .ugopet-showcase:before,
+  .ugopet-showcase:after { display: none; }
+  .ugopet-showcase .ugopet-screen {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    transform: none;
+    z-index: auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(42,48,53,.1);
+  }
+  .ugopet-showcase .ugopet-screen:hover { transform: translateY(-4px); }
+  .chain-architecture { padding: 32px 48px; border-radius: 18px; }
+}

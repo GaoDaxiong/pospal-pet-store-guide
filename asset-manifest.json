@@ -1,0 +1,166 @@
+[
+  {
+    "file": "boarding.jpeg",
+    "sha256": "b59b241c504ba3724a8ce140d6bd82bb6a0418fd2553de01c5078fbcd5f5c0bd"
+  },
+  {
+    "file": "employee-commission.jpeg",
+    "sha256": "645644857197482e5978c13681955da666a0eb0108c56501b5b2673a5dfaacca"
+  },
+  {
+    "file": "employee-crm-flow.png",
+    "sha256": "d45d2610bb4c333ff9b958a62add4b64cc39af092031689362fb628e1ffe71b8"
+  },
+  {
+    "file": "mall-flash-sale.jpeg",
+    "sha256": "7b24411fe7ece3d17bbbf002fdaf14d6d5a5faa4333b4033f6bc8504651a4ad1"
+  },
+  {
+    "file": "mall-group-buy.jpeg",
+    "sha256": "eb706c8622bd18973de522f5e9b20b0d4d40b14533e382300227dfb5af592bb2"
+  },
+  {
+    "file": "mall-home.jpeg",
+    "sha256": "4dbceb4b5a455368650f08ca7c9cd395ba541651fce6c475f9e6325f964cd4ca"
+  },
+  {
+    "file": "mall-products.jpeg",
+    "sha256": "d9cfe09ffa0403821e9c5726c13e36afcca00281915040ede3fa92c33fbc7c46"
+  },
+  {
+    "file": "mall-promotion.jpeg",
+    "sha256": "2711dc607c80b467839f54dd503f059c5343317d817880dbcb40cf0a6755cf7f"
+  },
+  {
+    "file": "medical.jpeg",
+    "sha256": "bbc29df4aebabef6e21b2430d03960e1cbdd801c30a01c35be5eef5aef392cd3"
+  },
+  {
+    "file": "member-analysis.jpeg",
+    "sha256": "0cb490e7c1c9487bc4a157250327a5457db81d1305c96b6531e6a329a77cd67e"
+  },
+  {
+    "file": "member-enrollment-diagram.webp",
+    "sha256": "51c54ddc131342f58c59533a66c65b3853b2f4a16780eff62712ffa2c299457d"
+  },
+  {
+    "file": "member-management-diagram.webp",
+    "sha256": "00dbdbd678d21a0dafa13f3037bb3822268ba155cff96fd9d36f7176d9619fc6"
+  },
+  {
+    "file": "member-points-diagram.webp",
+    "sha256": "77aa911b5f284e72aa6e2c122614319fc4519ccb184d59d91b55e4143a08cc22"
+  },
+  {
+    "file": "member-points.jpeg",
+    "sha256": "262be9e3c3c244366733362a09a9c798559465ec684385fb43cc83f8be7716b8"
+  },
+  {
+    "file": "member-recharge-diagram.webp",
+    "sha256": "c955a0c35f37b15dc970650ff8862c3c28cb992b41b8c5e59e5e5b5de89c9848"
+  },
+  {
+    "file": "original-cover.jpeg",
+    "sha256": "a7727fe3013a6cefa470cdaf7f78050c53f160267b2e4e485d59af741062f588"
+  },
+  {
+    "file": "pet-cat-resting.webp",
+    "sha256": "9ed40bb838e33c526dc0fab93eea64afa9f34c30787a1e6864e668af91edb716"
+  },
+  {
+    "file": "pet-chain-puppies.webp",
+    "sha256": "625191fcd49a85edefa955a9b122011da077d9dfe071908b19f6d0a0d83c9e8a"
+  },
+  {
+    "file": "pet-companions.webp",
+    "sha256": "23430aa6f9a4ef50310ee29f4e9d7615b145f7c8fb0946c9a98a401a238d60c2"
+  },
+  {
+    "file": "pet-corgi-helper.webp",
+    "sha256": "e3c6b47dcc6f59d73a2c80c91c7343ea6eb7af88cfe330d8628ac4523d578653"
+  },
+  {
+    "file": "pet-display.woff2",
+    "sha256": "5248adb9c9ca46d8462db89af5f54fdb8e840c7b16c3fa4262a8bd1eda9bef4d"
+  },
+  {
+    "file": "pet-grooming-workflow.webp",
+    "sha256": "6ca1c560bdc9d7ac1c2c459963a55ecae5feb2356d9c19c6f4ac7ac9fc0fcf5e"
+  },
+  {
+    "file": "pet-hero.webp",
+    "sha256": "8cb6539e9328c00e9176a5463e69716e4d7816b0ea70a5d964dd0f7f7754c874"
+  },
+  {
+    "file": "pet-marketing-rabbit.webp",
+    "sha256": "3fe278513694346b6c5e5dcd28ddf7d06bcc09f07e7a7bb1d02e76b4d0a2b3d0"
+  },
+  {
+    "file": "pet-staff-poodle.webp",
+    "sha256": "0fa2a24058c68094a70418f6aa48bafbc94e68f93d3af39d59913d5849573683"
+  },
+  {
+    "file": "pet-store-hero-desktop.webp",
+    "sha256": "7908f324dceaff1d5d213e7312b8ec543469c4914c2edd84a76ea18691cafb08"
+  },
+  {
+    "file": "pet-store-hero-mobile.webp",
+    "sha256": "2dc6dd62ce411b722d4a56202e8e86c2c0e43dae8ddb5ef39f4a9faa3064b144"
+  },
+  {
+    "file": "pospal-logo.png",
+    "sha256": "043215e60681c54144fbdfd08aefa15ee78f9b0059574fc3e167b3ac2ee09065"
+  },
+  {
+    "file": "pospal-pet-solution.pdf",
+    "sha256": "8e2e8916cab57c73bfe7fcfdb5b6841ff7cb9e59b4b6cb65148bcae08aebeaf4"
+  },
+  {
+    "file": "product-devices.png",
+    "sha256": "080f14df3fef032e374aa7376108a9e4c642eb1078fea86998c27b0eeb55f7f1"
+  },
+  {
+    "file": "promotion-settings.jpeg",
+    "sha256": "87d741cc09a920791f7fc690df897e673ce633ee27fefb0db492a7934c7c7c21"
+  },
+  {
+    "file": "promotion-types.jpeg",
+    "sha256": "5a15852186698d03848846c9bdc8fe2a8fbc9fb2e151556e2af55849518c2a94"
+  },
+  {
+    "file": "reminders.jpeg",
+    "sha256": "02580125d16910182b5709b33af15da9f875b3de83438d2afaa16ad8d420ee13"
+  },
+  {
+    "file": "stock-all.jpeg",
+    "sha256": "9d607686d4d0d02129509526b10a7e3683465c3b7d59cb3b4e592948a2719bc7"
+  },
+  {
+    "file": "stock-partial.jpeg",
+    "sha256": "dd507d0ec01553c71e2c1c099b61c951f6d9a1c10e2df866de47b9fc162c78d3"
+  },
+  {
+    "file": "supplier.jpeg",
+    "sha256": "a37400fa7ec1012f646e019f3e105cb60a7488efecf0bf5ac382a8635e583461"
+  },
+  {
+    "file": "ugopet-mini-blue-cat-adoption.webp",
+    "sha256": "d6889d27708469b612d73d86a782c4fb65e80a4d335a37039a71d3ace4b82adb"
+  },
+  {
+    "file": "ugopet-mini-cream-membership.webp",
+    "sha256": "487db05f26695b1b4776111aa68b3fcdf3a3f38b238b15b0befb1e9624ac3700"
+  },
+  {
+    "file": "ugopet-mini-deep-blue-nutrition.webp",
+    "sha256": "4172eed9859d99081bfa2931770cffa20cfef1723aa5098095e320df61672936"
+  },
+  {
+    "file": "ugopet-mini-orange-commerce.webp",
+    "sha256": "f0601ba1a5f738c6b157fa29c35d2b875640159fbaffb595af49647f61325f4c"
+  },
+  {
+    "file": "ugopet-mini-summer-swim.webp",
+    "sha256": "faea11f43709760e50182b41b9a959c1d8f6865e7c93a62a5d0c7db9c31fbf49"
+  }
+]

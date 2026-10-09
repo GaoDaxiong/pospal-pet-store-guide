@@ -1,0 +1,31 @@
+# Generated files and local tools
+node_modules/
+dist/
+.vite/
+.sites-runtime/
+.openai/
+.playwright-cli/
+output/
+tmp/
+design/
+source-material/
+coverage/
+.DS_Store
+__pycache__/
+*.log
+*.tar
+*.tar.gz
+*.zip
+
+# Private configuration and credentials
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+credentials*.json
+secrets*.json
