@@ -4,7 +4,7 @@
 
 ## 交付范围
 
-- `index.html`、`src/`、`public/assets/` 保留项目文件内容；`asset-manifest.json` 记录全部 41 项素材的 SHA-256，便于接收方校验。
+- `index.html`、`src/`、`public/assets/` 保留项目文件内容；`asset-manifest.json` 记录页面素材、未再引用的原图和站点图标的 SHA-256，便于接收方校验。
 - `package.json` 与锁文件提供本地构建依赖；不需要业务 API 密钥或环境变量。
 - README 和技术说明使用通用部署步骤，不包含现用服务器地址、本机绝对路径或托管账户配置。
 - 字体许可证保留上游版权信息；这类公开署名不作为本机信息删除。

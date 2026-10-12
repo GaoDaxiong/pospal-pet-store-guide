@@ -1,9 +1,24 @@
 // Product language is adapted from the supplied 40-page PDF. Page and image
 // references are kept here so content and original screenshots can be audited.
 // Online platform and CRM additions are marked as user-supplied content.
+
+// TODO(contact): 本方案页还没有可公开的销售电话、企业微信或预约表单。
+// 三项都留空时，页面不渲染「预约演示」、电话或表单。拿到真实联系方式后再填写。
+window.PRODUCT_CONTACT = {
+  phone: '',
+  wechatQr: '',
+  bookingUrl: '',
+};
+
+window.PRODUCT_SITE = {
+  name: '银豹宠物店管理系统',
+  siteUrl: 'https://pospal.cn/',
+  pdf: 'assets/pospal-pet-solution.pdf',
+};
+
 window.PRODUCT_SOLUTIONS = [
   {
-    id: 'store', name: '门店/医院方案', tabLabel: '门店/医院方案', teaser: '门店与医疗 · 员工管理 · 采购库存 · 营销', intro: '从商品、寄养、会员与医疗服务，到员工管理、采购库存和营销活动，覆盖门店与宠物医院的日常经营。',
+    id: 'store', name: '门店/医院方案', tabLabel: '门店/医院方案', teaser: '门店与医疗 · 员工管理 · 采购库存 · 营销', pitch: '收银、寄养、会员、医疗、提成、库存与营销，一套系统管好宠物门店和宠物医院的日常经营。', intro: '从商品、寄养、会员与医疗服务，到员工管理、采购库存和营销活动，覆盖门店与宠物医院的日常经营。',
     chapters: [
       { id: 'daily', title: '门店与医疗' },
       { id: 'staff', title: '员工管理' },
@@ -15,7 +30,7 @@ window.PRODUCT_SOLUTIONS = [
         ['商品资料', '支持自定义多级商品分类，例如主粮、美容、寄养。', '支持有码商品和无码项目录入及收银。', '支持整包拆分为零装。'],
         ['库存管理', '支持设置库存上限和下限。', '支持报损统计。', '支持手机配套移动盘点。', '支持进货批次管理（企业版）。'],
         ['供货商管理', '管理供货商资料。', '统计供货商结算进度。', '分析统计进货价格。']
-      ], images: [['product-devices.png', '商品管理多终端界面']] },
+      ], images: [['product-devices.webp', '商品管理多终端界面：电脑、平板与手机上的商品资料']] },
       { id: 'boarding', chapter: 'daily', title: '寄养管理功能', pages: '7', lead: '按小时或按天计费，分区域管理寄养房间。', groups: [
         ['自动计时', '支持自定义寄养收费规则，例如按小时、按天计费。', '支持划分寄养区域管理房间，例如喵区、汪区。', '寄养时可添加同期消费商品并统一结算。'],
         ['协议与提醒', '自带寄养协议打印，支持自定义协议。', '寄养到期红灯提醒。', '逾期寄养依然自动计时。'],
@@ -97,7 +112,7 @@ window.PRODUCT_SOLUTIONS = [
     ]
   },
   {
-    id: 'online', name: '线上经营方案', tabLabel: '线上经营方案', teaser: '外卖对接 · 团购引流 · 会员商城 · 员工 CRM', intro: '连接外卖与团购平台，结合会员小程序商城和员工 CRM，从公域引流到私域会员经营。',
+    id: 'online', name: '线上经营方案', tabLabel: '线上经营方案', teaser: '外卖对接 · 团购引流 · 会员商城 · 员工 CRM', pitch: '外卖、团购、会员商城和员工 CRM 接在一套系统里，把公域到店的客人留下来做私域经营。', intro: '连接外卖与团购平台，结合会员小程序商城和员工 CRM，从公域引流到私域会员经营。',
     features: [
       { id: 'delivery', title: '外卖对接', pages: '用户补充', lead: '支持主流外卖平台对接，商品、库存与订单同步。', layout: 'specification', groups: [
         ['外卖平台', '支持对接淘宝闪购。', '支持对接美团外卖。'],
@@ -124,11 +139,11 @@ window.PRODUCT_SOLUTIONS = [
         ['员工引流', '通过独立注册码邀请客户注册会员。', '绑定客户归属关系，长期累计提成。'],
         ['朋友圈卖货', '员工通过 CRM 分享商品信息和海报到朋友圈。', '客户下单后，自动计算提成。'],
         ['推广员与 CRM 的区别', '推广员以门店会员身份拉新，并以会员身份独立结算拉新佣金；员工采用此方式需先注册为门店会员，从商城入口拉新。', 'CRM 工具以员工身份直接在 CRM 系统内拉新，提成计入系统员工绩效。']
-      ], images: [['employee-crm-flow.png', '员工通过独立二维码、手动提交资料或分享商城商品引导注册和购买；客户归属自动绑定员工，小程序订单由总部仓库配送']] }
+      ], images: [['employee-crm-flow.webp', '员工通过独立二维码、手动提交资料或分享商城商品引导注册和购买；客户归属自动绑定员工，小程序订单由总部仓库配送']] }
     ]
   },
   {
-    id: 'chain', name: '连锁方案', teaser: '总部管理 · 会员共享 · 订货配货', intro: '总部连接仓库、线上商城、连锁门店与连锁医院。',
+    id: 'chain', name: '连锁方案', tabLabel: '连锁方案', teaser: '总部管理 · 会员共享 · 订货配货', pitch: '总部统一管理仓库、线上商城、连锁门店和连锁医院，会员共享，订货和配货走同一条链路。', intro: '总部连接仓库、线上商城、连锁门店与连锁医院。',
     features: [
       { id: 'management', title: '连锁管理', pages: '3–4', lead: '总部统一管理连锁业务，门店和医院共享会员，并向总部订货、由仓库配货。', groups: [
         ['总部管理', '总部统一管理连锁门店与连锁医院。', '总部连接仓库与线上商城。'],

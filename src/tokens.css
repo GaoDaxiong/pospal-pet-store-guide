@@ -1,0 +1,66 @@
+/* Shared design tokens. Later stylesheets should use these variables
+   instead of introducing another orange, type size, or breakpoint. */
+:root {
+  --brand-logo: #e7812d;
+  --orange: #c9673f;
+  --orange-ink: #b65a35;
+  --orange-dark: #7a3e22;
+  --orange-soft: #fbe7d5;
+  --ink: #3c342e;
+  --ink-soft: #5c4e43;
+  --muted: #6b5d50;
+  --line: #e0d3c3;
+  --line-strong: #d4c4b0;
+  --paper: #fcf8f1;
+  --paper-deep: #f4ecdf;
+  --surface: #f7f1e7;
+  --surface-raised: #fffaf4;
+  --detail-accent: #6f4b2a;
+  --detail-accent-soft: #f7ecda;
+  --detail-accent-border: #d9c8ae;
+  --detail-surface: #f5eee3;
+  --focus: #8f3f28;
+
+  --font-sans: "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  --font-display: PetDisplay, "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 22px;
+  --text-2xl: 28px;
+  --text-3xl: 40px;
+  --text-4xl: 56px;
+  --leading-body: 1.75;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --radius-soft: 14px 18px 12px 16px;
+  --radius-card: 24px 16px 26px 16px;
+  --radius-pill: 999px;
+
+  --header: 64px;
+  --tabs: 52px;
+  --chapter-bar: 0px;
+  --sticky-gap: 16px;
+  --page: 1120px;
+  --rail: 208px;
+  --bp-tablet: 700px;
+  --bp-desktop: 1100px;
+}
+
+@media (max-width: 699px) {
+  :root {
+    --header: 60px;
+    --tabs: 48px;
+  }
+}

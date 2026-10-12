@@ -21,8 +21,12 @@ const reveals = 'IntersectionObserver' in window ? new IntersectionObserver(entr
 }, {threshold: 0, rootMargin: '0px 0px -24px 0px'}) : null;
 
 function measure() {
+  const desktop = window.matchMedia('(min-width: 1100px)').matches;
+  const bar = view?.querySelector('.chapter-bar');
+  const barHeight = bar && !desktop ? bar.getBoundingClientRect().height : 0;
+  root.style.setProperty('--chapter-bar', `${barHeight}px`);
   const styles = getComputedStyle(root);
-  stickyOffset = ['--header', '--tabs'].reduce((height, property) =>
+  stickyOffset = ['--header', '--tabs', '--chapter-bar'].reduce((height, property) =>
     height + (parseFloat(styles.getPropertyValue(property)) || 0), 18);
   positions = articles.map(article => {
     const chapter = article.closest('.solution-chapter');
@@ -51,6 +55,11 @@ function update() {
     if (button.dataset.featureTarget === id || button.dataset.featureChapter === articles[current]?.dataset.chapter) button.setAttribute('aria-current', 'location');
     else button.removeAttribute('aria-current');
   });
+  const currentBar = view?.querySelector('.chapter-bar [aria-current="location"]');
+  const bar = currentBar?.closest('.chapter-bar');
+  if (currentBar && bar) {
+    bar.scrollTo({left: currentBar.offsetLeft - (bar.clientWidth - currentBar.offsetWidth) / 2, behavior: 'instant'});
+  }
 }
 
 function schedule() {

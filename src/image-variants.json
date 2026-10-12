@@ -1,0 +1,149 @@
+{
+  "boarding.jpeg": {
+    "width": 1918,
+    "height": 1080,
+    "src": "boarding-1280.webp",
+    "srcset": "boarding-640.webp 640w, boarding-1280.webp 1280w",
+    "full": "boarding.jpeg"
+  },
+  "reminders.jpeg": {
+    "width": 1678,
+    "height": 883,
+    "src": "reminders-1280.webp",
+    "srcset": "reminders-640.webp 640w, reminders-1280.webp 1280w",
+    "full": "reminders.jpeg"
+  },
+  "medical.jpeg": {
+    "width": 2872,
+    "height": 1576,
+    "src": "medical-1280.webp",
+    "srcset": "medical-640.webp 640w, medical-1280.webp 1280w",
+    "full": "medical.jpeg"
+  },
+  "employee-commission.jpeg": {
+    "width": 1483,
+    "height": 880,
+    "src": "employee-commission-1280.webp",
+    "srcset": "employee-commission-640.webp 640w, employee-commission-1280.webp 1280w",
+    "full": "employee-commission.jpeg"
+  },
+  "supplier.jpeg": {
+    "width": 1462,
+    "height": 792,
+    "src": "supplier-1280.webp",
+    "srcset": "supplier-640.webp 640w, supplier-1280.webp 1280w",
+    "full": "supplier.jpeg"
+  },
+  "stock-all.jpeg": {
+    "width": 828,
+    "height": 1792,
+    "src": "stock-all-640.webp",
+    "srcset": "stock-all-640.webp 640w",
+    "full": "stock-all.jpeg"
+  },
+  "stock-partial.jpeg": {
+    "width": 828,
+    "height": 1792,
+    "src": "stock-partial-640.webp",
+    "srcset": "stock-partial-640.webp 640w",
+    "full": "stock-partial.jpeg"
+  },
+  "promotion-types.jpeg": {
+    "width": 1177,
+    "height": 521,
+    "src": "promotion-types-1177.webp",
+    "srcset": "promotion-types-640.webp 640w, promotion-types-1177.webp 1177w",
+    "full": "promotion-types.jpeg"
+  },
+  "promotion-settings.jpeg": {
+    "width": 1701,
+    "height": 936,
+    "src": "promotion-settings-1280.webp",
+    "srcset": "promotion-settings-640.webp 640w, promotion-settings-1280.webp 1280w",
+    "full": "promotion-settings.jpeg"
+  },
+  "member-analysis.jpeg": {
+    "width": 1581,
+    "height": 622,
+    "src": "member-analysis-1280.webp",
+    "srcset": "member-analysis-640.webp 640w, member-analysis-1280.webp 1280w",
+    "full": "member-analysis.jpeg"
+  },
+  "ugopet-mini-orange-commerce.webp": {
+    "width": 863,
+    "height": 1823,
+    "src": "ugopet-mini-orange-commerce-640.webp",
+    "srcset": "ugopet-mini-orange-commerce-640.webp 640w",
+    "full": "ugopet-mini-orange-commerce.webp"
+  },
+  "ugopet-mini-cream-membership.webp": {
+    "width": 862,
+    "height": 1825,
+    "src": "ugopet-mini-cream-membership-640.webp",
+    "srcset": "ugopet-mini-cream-membership-640.webp 640w",
+    "full": "ugopet-mini-cream-membership.webp"
+  },
+  "ugopet-mini-summer-swim.webp": {
+    "width": 862,
+    "height": 1824,
+    "src": "ugopet-mini-summer-swim-640.webp",
+    "srcset": "ugopet-mini-summer-swim-640.webp 640w",
+    "full": "ugopet-mini-summer-swim.webp"
+  },
+  "ugopet-mini-deep-blue-nutrition.webp": {
+    "width": 862,
+    "height": 1825,
+    "src": "ugopet-mini-deep-blue-nutrition-640.webp",
+    "srcset": "ugopet-mini-deep-blue-nutrition-640.webp 640w",
+    "full": "ugopet-mini-deep-blue-nutrition.webp"
+  },
+  "ugopet-mini-blue-cat-adoption.webp": {
+    "width": 887,
+    "height": 1774,
+    "src": "ugopet-mini-blue-cat-adoption-640.webp",
+    "srcset": "ugopet-mini-blue-cat-adoption-640.webp 640w",
+    "full": "ugopet-mini-blue-cat-adoption.webp"
+  },
+  "product-devices.webp": {
+    "width": 1254,
+    "height": 1254,
+    "src": "product-devices.webp",
+    "srcset": "product-devices-640.webp 640w, product-devices.webp 1254w",
+    "full": "product-devices.webp"
+  },
+  "employee-crm-flow.webp": {
+    "width": 1536,
+    "height": 1024,
+    "src": "employee-crm-flow-1280.webp",
+    "srcset": "employee-crm-flow-640.webp 640w, employee-crm-flow-1280.webp 1280w, employee-crm-flow.webp 1536w",
+    "full": "employee-crm-flow.webp"
+  },
+  "member-management-diagram.webp": {
+    "width": 1254,
+    "height": 1254,
+    "src": "member-management-diagram-960.webp",
+    "srcset": "member-management-diagram-960.webp 960w",
+    "full": "member-management-diagram.webp"
+  },
+  "member-enrollment-diagram.webp": {
+    "width": 1254,
+    "height": 1254,
+    "src": "member-enrollment-diagram-960.webp",
+    "srcset": "member-enrollment-diagram-960.webp 960w",
+    "full": "member-enrollment-diagram.webp"
+  },
+  "member-recharge-diagram.webp": {
+    "width": 1254,
+    "height": 1254,
+    "src": "member-recharge-diagram-960.webp",
+    "srcset": "member-recharge-diagram-960.webp 960w",
+    "full": "member-recharge-diagram.webp"
+  },
+  "member-points-diagram.webp": {
+    "width": 1254,
+    "height": 1254,
+    "src": "member-points-diagram-960.webp",
+    "srcset": "member-points-diagram-960.webp 960w",
+    "full": "member-points-diagram.webp"
+  }
+}
