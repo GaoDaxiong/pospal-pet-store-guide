@@ -7,7 +7,52 @@ def win(k,alt,cls=''): return f'<figure class="win {cls}"><div class="bar"><i></
 def phone(k,alt,cls=''): return f'<figure class="phone {cls}">{img(k,alt,sizes="260px")}</figure>'
 def card(k,alt,cls=''): return f'<figure class="card {cls}">{img(k,alt)}</figure>'
 def hl(*xs): return '<ul class="hl">'+''.join(f'<li>{x}</li>' for x in xs)+'</ul>'
+def kp(title,sub,cells,cols=3,cls=''):
+    cs=''.join(f'<div class="kc{(" "+c[4]) if len(c)>4 else ""}" style="grid-column:span {c[3] if len(c)>3 else 1}"><b>{c[0]}</b><small>{c[1]}</small><p>{c[2]}</p></div>' for c in cells)
+    return f'<div class="kp {cls}"><div class="kph"><h4>{title}</h4><span>{sub}</span></div><div class="kg" style="--c:{cols}">{cs}</div></div>'
 def m(x): return f'<b class="k">{x}</b>'
+
+IC={
+'gift':'<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/>',
+'percent':'<path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/>',
+'cal':'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>',
+'bag':'<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>',
+'check':'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/>',
+'star':'<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/>',
+'zap':'<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>',
+'wallet':'<path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/>',
+'tag':'<path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r="1"/>',
+'box':'<path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/>',
+'ticket':'<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/>',
+'coins':'<circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4M16.71 13.88l.7.71-2.82 2.82"/>',
+'uplus':'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/>',
+'link':'<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>',
+'truck':'<path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2M15 18H9M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>',
+'hq':'<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2M10 6h4M10 10h4M10 14h4M10 18h4"/>',
+'wh':'<path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z"/><path d="M6 18h12M6 14h12"/><rect x="6" y="10" width="12" height="12"/>',
+'store':'<path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4M2 7h20M2 7v3a2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0V7"/>',
+'hosp':'<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/>',
+}
+def ic(k,cls='ic'): return f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{IC[k]}</svg>'
+def pills(*xs): return '<div class="pills">'+''.join(f'<span>{x}</span>' for x in xs)+'</div>'
+RECH=('<div class="vstack fade"><div class="rc3">'
+ +''.join(f'<div class="rcol"><i class="ib">{ic(k)}</i><b>{t}</b>{pills(*xs)}</div>' for k,t,xs in [('gift','赠送',('商品 / 服务','积分 / 余额','优惠券')),('percent','折扣',('洗护折扣','商品折扣')),('cal','分期返还',('赠送金额','赠送礼品','使用期限'))])
+ +'</div><div class="pflow"><div class="pside">'
+ +''.join(f'<span class="chip">{ic(k)}{t}</span>' for k,t in [('bag','消费累计'),('check','签到赠送'),('star','抽奖获取'),('zap','多倍奖励')])
+ +'</div><svg class="pfan" viewBox="0 0 60 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 25C30 25 30 100 60 100M0 75C30 75 30 100 60 100M0 125C30 125 30 100 60 100M0 175C30 175 30 100 60 100"/></svg>'
+ +f'<div class="pnode">{ic("coins")}<b>积分账户</b></div>'
+ +'<svg class="pfan" viewBox="0 0 60 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100C30 100 30 25 60 25M0 100C30 100 30 75 60 75M0 100C30 100 30 125 60 125M0 100C30 100 30 175 60 175"/></svg><div class="pside">'
+ +''.join(f'<span class="chip">{ic(k)}{t}</span>' for k,t in [('wallet','积分抵现'),('tag','兑换优惠券'),('box','兑换商品'),('ticket','参与抽奖')])
+ +'</div></div></div>')
+CRMV=('<div class="crmw">'+win('commission','员工提成规则设置')
+ +'<div class="tl fade"><small>员工 CRM 引流</small><ol>'
+ +''.join(f'<li><i>{n}</i>{ic(k)}<b>{t}</b><span>{s}</span></li>' for n,k,t,s in [(1,'uplus','拉新','二维码 · 代注册 · 分享商品'),(2,'link','绑定归属','自动、长期'),(3,'truck','下单配送','仓库配送 · 自动提成')])
+ +'</ol></div></div>')
+CHAINV=('<div class="ch2 fade" role="img" aria-label="连锁管理：总部统一管理商品、会员、区域与订货配送，连接仓库与线上商城、连锁门店、连锁医院；门店与医院会员共享。">'
+ +f'<div class="cnode top"><i class="ib big">{ic("hq")}</i><b>总部管理</b><span>商品 · 会员 · 区域 · 订货配送</span></div>'
+ +'<svg class="cbr" viewBox="0 0 600 70" preserveAspectRatio="none" aria-hidden="true"><path d="M300 0V35M100 35H500M100 35V70M300 35V70M500 35V70"/></svg><div class="crow">'
+ +''.join(f'<div class="cnode"><i class="ib">{ic(k)}</i><b>{t}</b></div>' for k,t in [('wh','仓库 &amp; 商城'),('store','连锁门店'),('hosp','连锁医院')])
+ +'</div><div class="cshare"><span>会员共享</span></div></div>')
 
 def act(id,n,eyebrow,title,intro,body,tone=''):
     return f'''<section class="act {tone}" id="{id}"><div class="wrap"><header class="ahead fade"><span class="anum">{n}</span><span class="eyebrow">{eyebrow}</span><h2>{title}</h2><p class="lead">{intro}</p></header>{body}</div></section>'''
@@ -24,7 +69,7 @@ f'''<p>新增会员时，宠主资料和{m('宠物资料')}一起录入，老客
 +scene('让顾客愿意常来',
 f'''<p>充值不只是送金额：可以{m('赠送商品或服务')}、积分或余额、优惠券，也可以给充值会员设定{m('洗护折扣')}和商品折扣。赠送的金额和礼品还能{m('分期返还')}并限制使用期限，返还周期长过储值消费周期，会员自然留得更久。</p>
 <p>积分来自消费累计、{m('每日签到')}（可递增）和抽奖，会员等级、会员日、生日还能设置{m('多倍积分')}；用起来可以抵现、兑换优惠券或商品、参与抽奖。储值卡、{m('次卡')}、月卡、季卡、购物卡与优惠券都可自定义，限定使用时间和消费品类。</p>''',
-'<div class="duo">'+card('dia-recharge','充值规则关系图','sq')+card('dia-points','积分获取与使用关系图','sq')+'</div>','split rev')
+RECH,'split rev')
 +'<div class="quote fade"><p>收银台前，<br>一次结清所有的事。</p></div>'
 +scene('结账，在哪台设备上都一样',
 f'''<p>Windows 收银机、iPad、安卓平板、手机都能收银，数据{m('云端同步')}。商品分类可以自定义多级（主粮、美容、寄养……），{m('有码商品和无码服务项目')}都能录入收银，整包商品也能{m('拆零')}卖。</p>
@@ -78,7 +123,7 @@ scene('提成算得清，员工才愿意多做一步',
 f'''<p>普通商品按{m('固定比例或固定金额')}提成；美容师和助理协同完成一个项目，先按设定的分摊比例分业绩，再各自乘以提成比例；充值也能提成。会员 A 由员工 B 引导注册后，在线上商城自主购物，B 按规则获得{m('归属提成')}；会员到店消费，则由实际服务的人提成。店长适用按全店销售额的{m('阶梯提成')}，也可按品牌或分类设阶梯比例。</p>
 <p>员工用{m('CRM 小程序')}凭独立注册码或手动提交资料邀请顾客注册，长期绑定归属关系；把商品和海报分享到朋友圈，顾客下单自动计算提成。回访会员、一键转发优惠券，把{m('洗护 / 体检报告')}一键生成发到宠主微信，也能看自己的业绩提成和销售排名。</p>
 <p class="fine">和推广员的区别：推广员以门店会员身份拉新、独立结算佣金（员工需先注册为会员，从商城入口拉新）；CRM 以员工身份拉新，提成直接计入员工绩效。门店还可以管理导购员，配合预约服务排班。</p>''',
-'<div class="stack">'+win('commission','员工提成规则设置')+card('crm-flow','员工 CRM 引流与归属流程','tilt')+'</div>','split')
+CRMV,'split')
 +f'''<div class="goods fade"><div class="gtext"><h3>货，从进门到卖出都有数</h3>
 <p>自带宠物{m('商品资料库')}，一键导入；为商品设库存上下限，报损自动统计，企业版支持{m('进货批次管理')}。进货、调货、出库、退货给供货商、报损都在一套流程里。</p>
 <p>采购按部就班：商品部制定采购单 → 审核人员确认 → 采购按供货商确认的数量生成进货单 → 仓库按实际到货核对入库。赠品和多批不同进价的商品，系统自动{m('加权平均成本')}。门店按库存上限生成订货单，总部审核并匹配仓库库存、调整配货量，仓库出库，门店按货流单入库。</p>
@@ -88,13 +133,7 @@ f'''<p>普通商品按{m('固定比例或固定金额')}提成；美容师和助
 # ---------- ACT 6
 a6=act('chain','05','开第二家店的时候','店多了，<br>心不乱。',
 '总部统一管理仓库、线上商城、连锁门店和连锁医院，会员共享，订货和配货走同一条链路。',
-'''<div class="chain fade" role="img" aria-label="连锁管理架构：仓库与线上商城连接总部，总部统一管理连锁门店和连锁医院，两端会员共享，向总部订货、由仓库配货。">
-<div class="cn sup"><small>仓储与线上经营</small><b>仓库 &amp; 线上商城</b></div><i class="ln"></i>
-<div class="cn hq"><small>统一管理</small><b>总部管理</b><span>商品 · 会员 · 区域 · 订货配货</span></div>
-<svg class="fork" viewBox="0 0 1000 60" preserveAspectRatio="none"><path d="M500 0V24H250V60M500 24H750V60"/></svg>
-<div class="br"><div class="cn"><small>零售服务</small><b>连锁门店</b><span>门店订货，仓库配货</span></div><div class="cn"><small>医疗服务</small><b>连锁医院</b><span>医院订货，仓库配货</span></div></div>
-<div class="share"><i></i><b>会员共享</b><i></i></div></div>
-<div class="cprose fade"><p>在任何一家门店或医院办的会员，到另一家都认得——<b class="k">会员共享</b>。商品由总部做<b class="k">连锁商品管理</b>；门店和医院向总部<b class="k">订货</b>，总部审核、匹配仓库库存后由仓库<b class="k">配货</b>，门店之间也能<b class="k">调货</b>；再按<b class="k">区域</b>划分管理门店。</p></div>''')
+CHAINV+'''<div class="cprose fade"><p>在任何一家门店或医院办的会员，到另一家都认得——<b class="k">会员共享</b>。商品由总部做<b class="k">连锁商品管理</b>；门店和医院向总部<b class="k">订货</b>，总部审核、匹配仓库库存后由仓库<b class="k">配货</b>，门店之间也能<b class="k">调货</b>；再按<b class="k">区域</b>划分管理门店。</p></div>''')
 
 # ---------- ACT 7
 eco=[('云后台','老板 / 店长','设置商品、会员、预约、寄养、提成与营销，看经营数据'),('收银前台','收银员 / 前台','收银、寄养登记、挂号、接预约单'),
