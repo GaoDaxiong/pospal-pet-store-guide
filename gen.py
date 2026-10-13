@@ -19,7 +19,7 @@ a2=act('meet','01','顾客进门','先认识人，<br>再认识它。',
 '一位宠主牵着狗走进店里。从这一刻起，系统要记住的不只是一个手机号，还有那只毛孩子。',
 scene('第一次来，就留下一份完整的档案',
 f'''<p>新增会员时，宠主资料和{m('宠物资料')}一起录入，老客户的宠物资料也能{m('批量导入')}。下次再来，用电子会员卡、会员卡号、手机号，甚至只报一个{m('宠物昵称')}，都能马上找到。</p>
-<p>入会的门槛由门店自己定：{m('扫码免费注册')}、{m('充值折扣定级')}（充得越多折扣越高）、零售会员制的{m('付费年卡')}，或按{m('消费 / 积分累计')}升级，几种方式可以搭配使用。会员等级、升级制度、等级会员价都能自定义，不同品类还能对应不同折扣；再给会员打上{m('标签')}，往后推送的活动就能分人而定。</p>''',
+<p>入会的门槛由门店自己定：{m('扫码注册')}、{m('充值折扣定级')}（充得越多折扣越高）、零售会员制的{m('付费年卡')}，或按{m('消费 / 积分累计')}升级，几种方式可以搭配使用。会员等级、升级制度、等级会员价都能自定义，不同品类还能对应不同折扣；再给会员打上{m('标签')}，往后推送的活动就能分人而定。</p>''',
 '<div class="overlap">'+win('member-detail','云后台会员详情：会员与宠物资料')+phone('member-points','手机会员中心','ov')+'</div>','split')
 +scene('让顾客愿意常来',
 f'''<p>充值不只是送金额：可以{m('赠送商品或服务')}、积分或余额、优惠券，也可以给充值会员设定{m('洗护折扣')}和商品折扣。赠送的金额和礼品还能{m('分期返还')}并限制使用期限，返还周期长过储值消费周期，会员自然留得更久。</p>
@@ -106,27 +106,25 @@ a7=f'''<section class="act eco" id="eco"><div class="wrap"><header class="ahead 
 <div class="core"><span>银豹</span><b>云端数据</b></div>{nodes}</div></div></section>'''
 
 plans='''<section class="plans" id="plans"><div class="wrap"><header class="ahead center fade"><span class="eyebrow">版本</span><h2>先免费用起来，<br>需要时再加。</h2><p class="lead">基础版免费；连锁、营销等高级功能按需订阅，按月或按年。具体功能归属与价格请咨询银豹客服。</p></header>
-<div class="pl fade"><article class="plan"><h3>免费基础版</h3><div class="price">免费</div><ul><li>日常收银</li></ul><a class="btn g2" href="https://www.pospal.cn/" target="_blank" rel="noopener">免费注册</a></article>
-<article class="plan hi"><h3>订阅高级功能</h3><div class="price">咨询客服</div><ul><li>日常收银</li><li>连锁管理、营销工具等按需订阅</li><li>按月 / 按年</li></ul><a class="btn p" href="pospal-pet-solution.pdf" target="_blank">查看完整方案 PDF</a></article></div></div></section>'''
+<div class="pl fade"><article class="plan"><h3>免费基础版</h3><div class="price">免费</div><ul><li>日常收银</li></ul></article>
+<article class="plan hi"><h3>订阅高级功能</h3><div class="price">咨询客服</div><ul><li>日常收银</li><li>连锁管理、营销工具等按需订阅</li><li>按月 / 按年</li></ul></article></div></div></section>'''
 
 html=f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>银豹宠物门店管理系统 · 把每一只毛孩子，都记在心上</title>
 <meta name="description" content="银豹宠物门店管理系统：会员、收银、洗护预约、寄养直播、宠物医院、驱虫疫苗提醒、营销、员工与库存、连锁管理，一套系统照顾好门店和宠主。">
 <link rel="icon" href="favicon.svg"><link rel="stylesheet" href="/src/style.css"></head><body>
 <header class="nav"><div class="wrap navin"><a class="brand" href="#top"><svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="8" fill="#e7812d"/><path fill="#fff" d="M6.2 15.2 16.8 6.4c.5-.4 1.2-.1 1.3.5l.7 4.3 6.2 1.2c.7.1.9 1 .4 1.5L15.2 25.2c-.6.6-1.6.1-1.5-.7l.6-5.2-7.4-2.2c-.8-.2-1-.9-.7-1.5Z"/></svg><span>银豹宠物门店管理系统</span></a>
-<nav><a href="#meet">会员</a><a href="#care">服务</a><a href="#return">营销</a><a href="#chain">连锁</a></nav><a class="btn sm p" href="https://www.pospal.cn/" target="_blank" rel="noopener">免费注册</a></div></header>
+<nav><a href="#meet">会员</a><a href="#care">服务</a><a href="#return">营销</a><a href="#chain">连锁</a></nav></div></header>
 <main id="top">
 <section class="hero"><div class="wrap"><div class="copy fade"><div class="eyebrow">银豹宠物门店管理系统</div>
 <h1>把每一只<em>毛孩子</em>，<br>都记在心上</h1>
 <p class="sub">收银、会员、寄养、洗护预约、医疗诊疗与驱虫疫苗提醒，一套系统照顾好门店和宠主。</p>
-<div class="cta"><a class="btn p" href="pospal-pet-solution.pdf" target="_blank">查看完整方案 PDF</a><a class="btn g" href="https://www.pospal.cn/" target="_blank" rel="noopener">免费注册 →</a></div>
 <p class="fits">适用于 宠物店 · 宠物医院 · 宠物用品超市 · 宠物酒店 · 宠物乐园 · 宠物咖啡厅</p></div>
-<div class="device fade"><div class="lid"><div class="scr">{img('reminders','驱虫疫苗提醒列表',sizes='(max-width:800px) 92vw, 1000px',eager=True)}</div></div><div class="base"></div>
-<figure class="phone hp">{img('mall-home','宠物商城小程序首页',sizes='200px',eager=True)}</figure></div></div></section>
+<figure class="eco-hero fade"><picture><source media="(max-width:800px)" srcset="img/ecosystem-m.webp" width="2400" height="4010"><img src="img/ecosystem-a.webp" width="2400" height="1634" alt="银豹宠物门店生态：云管理后台、PC端收银APP、手机端收银APP、宠物行业小程序、我的店铺APP" fetchpriority="high" decoding="async"></picture></figure></div></section>
 <p class="dayline fade wrap">从顾客推门进来，到你开出第二家店——</p>
 {a2}{a3}{a4}{a5}{a6}{a7}{plans}
 <section class="final"><div class="wrap fade"><h2>让门店多一点从容，<br>宠主多一点<em>安心</em>。</h2>
-<div class="cta"><a class="btn p" href="pospal-pet-solution.pdf" target="_blank">查看完整方案 PDF</a><a class="btn g" href="https://www.pospal.cn/" target="_blank" rel="noopener">免费注册 →</a></div></div></section>
+</div></section>
 </main><footer><div class="wrap">银豹宠物门店管理系统 · 功能信息整理自银豹官网、官方帮助中心与银豹宠物行业方案，截图为真实系统界面（部分为旧版 UI）。</div></footer>
 <div class="lb" hidden><img alt=""><button aria-label="关闭">×</button></div>
 <script type="module" src="/src/main.js"></script></body></html>'''
